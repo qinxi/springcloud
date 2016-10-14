@@ -1,2 +1,4 @@
 rootProject.name = 'springcloud'
+include 'config-server'
+include 'config-server-test'
 
