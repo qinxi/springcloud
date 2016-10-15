@@ -2,6 +2,7 @@ group 'com.qinxi1992.springcloud'
 version '1.0-SNAPSHOT'
 
 
+
 buildscript {
     ext {
         springBootVersion = '1.4.0.RELEASE'
@@ -30,7 +31,7 @@ repositories {
 
 subprojects{
 
-    buildscript {
+    /*buildscript {
         repositories {
             mavenLocal()
             mavenCentral()
@@ -42,14 +43,14 @@ subprojects{
             classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 
         }
-    }
+    }*/
     group 'com.qinxi1992.springcloud'
     version '1.0-SNAPSHOT'
 
 
     apply plugin: 'java'
     apply plugin: 'idea'
-    apply plugin: "io.spring.dependency-management"
+    /*apply plugin: "io.spring.dependency-management"*/
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
