@@ -1,21 +1,7 @@
-/*
-
-dependencyManagement {
-    imports {
-        mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Angel.SR6'
-    }
-}
-
-dependencies {
-
-    compile 'org.springframework.cloud:spring-cloud-config'
-}
-*/
-
+apply plugin: 'spring-boot'
 
 dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-config'
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.4.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
 
 }

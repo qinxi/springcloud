@@ -30,7 +30,6 @@ repositories {
 
 
 subprojects{
-
     buildscript {
         repositories {
             mavenLocal()
@@ -45,6 +44,13 @@ subprojects{
         }
     }
 
+    group 'com.qinxi1992.springcloud'
+    version '1.0-SNAPSHOT'
+
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
     apply plugin: "io.spring.dependency-management"
 
     dependencyManagement {
@@ -52,13 +58,7 @@ subprojects{
             mavenBom 'org.springframework.cloud:spring-cloud-config:1.2.0.RELEASE'
         }
     }
-    group 'com.qinxi1992.springcloud'
-    version '1.0-SNAPSHOT'
 
-
-    apply plugin: 'java'
-    apply plugin: 'idea'
-    /*apply plugin: "io.spring.dependency-management"*/
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8

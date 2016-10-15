@@ -1,4 +1,6 @@
 rootProject.name = 'springcloud'
 include 'config-server'
 include 'config-server-test'
+include 'springcloud-eureka'
+include 'eureka-service'
 
