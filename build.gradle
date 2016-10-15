@@ -10,6 +10,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:0.6.1.RELEASE"
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
@@ -37,7 +38,7 @@ subprojects{
             jcenter()
         }
         dependencies {
-
+            classpath "io.spring.gradle:dependency-management-plugin:0.6.1.RELEASE"
             classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 
         }
@@ -48,6 +49,7 @@ subprojects{
 
     apply plugin: 'java'
     apply plugin: 'idea'
+    apply plugin: "io.spring.dependency-management"
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
@@ -70,6 +72,4 @@ subprojects{
     tasks.withType(JavaCompile) {
         options.encoding = "UTF-8"
     }
-
-
 }
