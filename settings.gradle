@@ -3,5 +3,5 @@ include 'config-server'
 include 'config-server-test'
 include 'springcloud-eureka'
 include 'eureka-service'
-include 'eureka-client'
+include 'ribbon-eureka'
 
