@@ -4,4 +4,4 @@ spring cloud eureka 服务消费者
     如果启动多个不同端口的 服务提供者,但是有一个服务提供者服务不可用时,
     就会返回错误信息,而不是继续使用还在也运行的其他可用服务.
 
-所以 有了 [../ribbon-eureka-hystrix](ribbon-eureka-hystrix)  项目的出现
+所以 有了 [ribbon-eureka-hystrix](../ribbon-eureka-hystrix)  项目的出现
