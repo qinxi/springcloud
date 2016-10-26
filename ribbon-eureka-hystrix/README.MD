@@ -1,0 +1,1 @@
+添加了断路器的 spring cloud eureka 服务消费者

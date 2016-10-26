@@ -4,4 +4,5 @@ include 'config-server-test'
 include 'springcloud-eureka'
 include 'eureka-service'
 include 'ribbon-eureka'
+include 'ribbon-eureka-hystrix'
 
