@@ -16,9 +16,11 @@ public class Index {
     @Autowired
     RestTemplate client;
 
-    @RequestMapping("/add")
-    public String add() {
-        return client.getForEntity("http://COMPUTE-SERVICE/add?a=2&b=4", String.class).getBody();
+
+
+    @RequestMapping(value = "/fail", method = RequestMethod.GET)
+    public String fail() {
+        return computeService.failService();
     }
 
 
