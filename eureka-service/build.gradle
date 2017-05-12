@@ -3,6 +3,9 @@ apply plugin: 'spring-boot'
 apply plugin: 'docker'
 
 dependencies {
+
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: '1.2.0.RELEASE'
 
@@ -14,7 +17,7 @@ dependencies {
 group = 'qinxi'
 
 task buildDocker(type: Docker, dependsOn: build) {
-    push = true
+    //push = true
     applicationName = jar.baseName
     dockerfile = file('src/main/docker/Dockerfile')
     doFirst {

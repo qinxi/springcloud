@@ -1,6 +1,0 @@
-spring:
-  cloud:
-    config:
-      uri: http://config-server:8082
-      name: springcloud-eureka
-    profile: ${config.profile:dev}

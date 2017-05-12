@@ -8,7 +8,7 @@ dependencies {
 group = 'qinxi'
 
 task buildDocker(type: Docker, dependsOn: build) {
-    push = true
+    //push = true
     applicationName = jar.baseName
     dockerfile = file('src/main/docker/Dockerfile')
     doFirst {
