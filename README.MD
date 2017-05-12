@@ -18,3 +18,25 @@ springcloud demo
 编译 
 
     gradle build 
+    
+----    
+
+docker 运行 
+
+gradle buildDocker
+
+docker run qinxi/config-server
+
+
+docker run --name=xxx --link=xxxx -d -p 8888:8888 qinxi/xxxxx
+
+
+```
+    --name=xxx 别名
+    --link=xxx 用户在该容器内访问其他容器
+    --d 后台运行
+    -p localport:containerPort 端口映射
+
+```
+
+

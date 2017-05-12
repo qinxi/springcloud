@@ -1,9 +1,6 @@
-server:
-  port: 8888
-
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
+spring:
+  cloud:
+    config:
+      uri: http://config-server:8082
+      name: springcloud-eureka
+    profile: ${config.profile:dev}

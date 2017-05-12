@@ -1,12 +1,6 @@
-server:
-  port: 9999
-
 spring:
-  application:
-    name: compute-service
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8888/eureka/
-    region: test1
+  cloud:
+    config:
+      uri: http://config-server:8082
+      name: eureka-service
+    profile: ${config.profile:dev}
