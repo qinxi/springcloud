@@ -11,4 +11,4 @@ eureka:
       defaultZone: http://springcloud-eureka:8888/eureka/
     region: test1
   instance:
-      prefer-ip-address: true
+      preferIpAddress: true
