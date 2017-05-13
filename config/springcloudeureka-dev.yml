@@ -7,3 +7,5 @@ eureka:
     fetch-registry: false
     serviceUrl:
       defaultZone: http://springcloud-eureka:${server.port}/eureka/
+  instance:
+    preferIpAddress: ture
