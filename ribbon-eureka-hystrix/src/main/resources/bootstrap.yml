@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: ribbon-eureka-hystrix
+    cloud:
+        config:
+            uri: http://config-server:8082
+            name: ribbon-eureka-hystrix
+            profile: ${config.profile:dev}

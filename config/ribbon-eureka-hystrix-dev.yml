@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: ribbon-eureka-hystrix
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://springcloud-eureka:8888/eureka/
+    region: test1
+  instance:
+      preferIpAddress: true
