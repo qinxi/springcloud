@@ -5,3 +5,10 @@ spring cloud eureka 服务消费者
     就会返回错误信息,而不是继续使用还在也运行的其他可用服务.
 
 所以 有了 [ribbon-eureka-hystrix](../ribbon-eureka-hystrix)  项目的出现
+
+
+```
+gradle buildDocker
+
+docker run --name=ribbon-eureka --link=config-server:config-server --link=eureka-service:eureka-service --link=springcloud-eureka:springcloud-eureka  -p 8080:8080  qinxi/ribbon-eureka:1.0-SNAPSHOT
+```
