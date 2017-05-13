@@ -1,4 +1,6 @@
 apply plugin: 'spring-boot'
+apply plugin: 'docker'
+
 
 dependencies {
 
@@ -14,4 +16,20 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
 
     compile("org.springframework.boot:spring-boot-starter-actuator")
+}
+
+
+
+group = 'qinxi'
+
+task buildDocker(type: Docker, dependsOn: build) {
+    //push = true
+    applicationName = jar.baseName
+    dockerfile = file('src/main/docker/Dockerfile')
+    doFirst {
+        copy {
+            from jar
+            into stageDir
+        }
+    }
 }
