@@ -1,8 +1,8 @@
 
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 
 dependencies {
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka-server', version: '1.2.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka-server'
 
     compile("org.springframework.boot:spring-boot-starter-actuator")
 }
