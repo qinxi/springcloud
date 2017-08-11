@@ -58,7 +58,7 @@ subprojects{
     dependencyManagement {
         imports {
             mavenBom "org.springframework.cloud:spring-cloud-config:${springCloudNetflix}"
-            mavenBom "org.springframework.cloud:spring-cloud-netflix-core:${springCloudNetflix}"
+            mavenBom "org.springframework.cloud:spring-cloud-netflix:${springCloudNetflix}"
         }
     }
 
