@@ -36,6 +36,8 @@ docker run --name=xxx --link=xxxx -d -p 8888:8888 qinxi/xxxxx
     --link=xxx 用户在该容器内访问其他容器
     --d 后台运行
     -p localport:containerPort 端口映射
+    
+     -e "deep=purple" 环境变量
 
 ```
 

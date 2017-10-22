@@ -1,35 +1,17 @@
-apply plugin: 'spring-boot'
-apply plugin: 'docker'
-
+apply plugin: 'org.springframework.boot'
 
 dependencies {
 
 
     compile 'org.springframework.cloud:spring-cloud-starter-config'
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-ribbon
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-ribbon', version: springCloudVersion
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: springCloudVersion
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-ribbon'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka'
 // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: springCloudVersion
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix'
 
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
 
     compile("org.springframework.boot:spring-boot-starter-actuator")
-}
-
-
-
-group = 'qinxi'
-
-task buildDocker(type: Docker, dependsOn: build) {
-    //push = true
-    applicationName = jar.baseName
-    dockerfile = file('src/main/docker/Dockerfile')
-    doFirst {
-        copy {
-            from jar
-            into stageDir
-        }
-    }
 }
