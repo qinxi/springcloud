@@ -5,7 +5,8 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     ext {
-        springBootVersion = '1.4.0.RELEASE'
+        springBootVersion = '1.5.8.RELEASE'
+        springCloudVersion = '1.2.3.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -38,7 +39,7 @@ subprojects{
             jcenter()
         }
         dependencies {
-            classpath "io.spring.gradle:dependency-management-plugin:0.6.1.RELEASE"
+            classpath "io.spring.gradle:dependency-management-plugin:1.0.2.RELEASE"
             classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
             classpath('se.transmode.gradle:gradle-docker:1.2')
         }
@@ -55,7 +56,7 @@ subprojects{
 
     dependencyManagement {
         imports {
-            mavenBom 'org.springframework.cloud:spring-cloud-config:1.2.0.RELEASE'
+            mavenBom 'org.springframework.cloud:spring-cloud-config:1.2.3.RELEASE'
         }
     }
 

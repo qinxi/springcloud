@@ -7,7 +7,7 @@ dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-config'
 
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: '1.2.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: springCloudVersion
 
     compile("org.springframework.boot:spring-boot-starter-actuator")
 }
