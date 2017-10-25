@@ -1,0 +1,13 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: feign
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://springcloud-eureka:8888/eureka/
+    region: test1
+  instance:
+      preferIpAddress: true
