@@ -12,3 +12,6 @@ eureka:
     region: test1
   instance:
       preferIpAddress: true
+logging:
+  level:
+    org.springframework.web.servlet.DispatcherServlet: DEBUG

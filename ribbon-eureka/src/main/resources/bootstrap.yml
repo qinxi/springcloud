@@ -1,8 +1,8 @@
 spring:
-    application:
-        name: ribbon-eureka
-    cloud:
-        config:
-            uri: http://config-server:8082
-            name: ribbon-eureka
-            profile: ${config.profile:dev}
+  application:
+    name: ribbon-eureka
+  cloud:
+    config:
+      uri: http://config-server:8082
+      name: ribbon-eureka
+      profile: ${config.profile:dev}

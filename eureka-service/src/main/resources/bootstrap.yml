@@ -1,8 +1,8 @@
 spring:
-    application:
-        name: eureka-service
-    cloud:
-        config:
-            uri: http://config-server:8082
-            name: eurekaservice
-            profile: ${config.profile:dev}
+  application:
+    name: eureka-service
+  cloud:
+    config:
+      uri: http://config-server:8082
+      name: eureka-service
+      profile: ${config.profile:dev}

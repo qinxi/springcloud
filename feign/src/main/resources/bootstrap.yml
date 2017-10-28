@@ -1,8 +1,8 @@
 spring:
-    application:
-        name: feign
-    cloud:
-        config:
-            uri: http://config-server:8082
-            name: feign
-            profile: ${config.profile:dev}
+  application:
+    name: feign
+  cloud:
+    config:
+      uri: http://config-server:8082
+      name: feign
+      profile: ${config.profile:dev}

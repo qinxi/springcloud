@@ -2,7 +2,10 @@
 
 dependencies {
 
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-feign'
 
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka'
+    compile 'org.springframework.cloud:spring-cloud-starter-sleuth'
 }
