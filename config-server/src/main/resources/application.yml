@@ -8,6 +8,10 @@ spring:
         git:
           uri: https://github.com/qinxi/springcloud.git
           searchPaths: config
+      discovery:
+        enabled: true
+  application:
+    name: config-server
 
 eureka:
   client:
@@ -16,5 +20,4 @@ eureka:
     region: test1
   instance:
     preferIpAddress: true
-
 
