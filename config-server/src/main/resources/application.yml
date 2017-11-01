@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/qinxi/springcloud.git
+          searchPaths: config
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://springcloud-eureka:8888/eureka/
+    region: test1
+  instance:
+    preferIpAddress: true
+
+
