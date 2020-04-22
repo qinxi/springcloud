@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('build') {
       steps {
         withGradle() {
-          build 'build '
+          build './gradlew build -x test'
         }
 
       }
